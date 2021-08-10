@@ -1,0 +1,12 @@
+nav{
+    background-color: hsl(200, 100% , 3%);
+}
+.nav-icons{
+    margin: 0ch 0.5ch 0ch 1ch;
+}
+.nav-icons{
+    color: var(--main);
+    font-size: 1rem;
+}
+.nav-link:hover{
+}

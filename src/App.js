@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Nav from "./modules/Nav";
+import Hero from "./modules/Hero";
+import Trending from "./modules/Trending";
+import Compare from "./modules/CompareCars";
+import Brands from "./modules/Brands";
+
+//data(JSON) example
+const data = { category: ["car", "bike", 3, 4, 5] };
+const cars = [
+  { name: "foo", specs: ["bar", "bazz"] },
+  { name: "foo", specs: ["bar", "bazz"] },
+];
+
+//car names list
+const carList = cars.map((car) => car.name);
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Nav category={data.category} carList={carList}></Nav>
+      <main>
+        <Hero></Hero>
+        <Trending></Trending>
+        <Compare></Compare>
+        <Brands></Brands>
+      </main>
     </div>
   );
 }

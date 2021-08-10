@@ -1,0 +1,57 @@
+.Trending{
+    background-color: var(--main-lighter);
+    padding: 1em;
+}
+.select-color{
+    background-color: black;
+    color: white;
+}
+.Modal{
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0px 0px 1px 0px black;
+    background-color: white;
+    overflow: hidden;
+}
+.Modal-options{
+}
+.Modal-options ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    height: max-content;
+}
+.Modal-options li{
+    padding: 1em;
+    width: 200px;
+    box-shadow: 0px 0px 1px 0px black;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.Modal-render{
+    padding: 1em;
+    background-color: black;
+    color: white;
+}
+.Modal-render h4{
+    text-transform: capitalize;
+
+}
+.Modal-btn{
+    width: max-content;
+    width: 150px;
+}
+.Modal-image{
+    padding: 1em;
+    background-color: gray;
+}
+.Modal-image img{
+    width: 500px;
+}
+.Modal-info{
+    color: gray;
+}
+.card-deck{
+
+}

@@ -1,0 +1,9 @@
+.Compare{
+    display: flex;
+}
+.CompareCars{
+    padding: 1em;
+}
+.CompareCars h4{
+    text-transform: capitalize;
+}
