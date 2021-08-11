@@ -36,7 +36,6 @@
 }
 .Modal-render h4{
     text-transform: capitalize;
-
 }
 .Modal-btn{
     width: max-content;
@@ -45,6 +44,7 @@
 .Modal-image{
     padding: 1em;
     background-color: gray;
+    min-width: 50%;
 }
 .Modal-image img{
     width: 500px;

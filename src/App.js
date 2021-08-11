@@ -4,6 +4,7 @@ import Hero from "./modules/Hero";
 import Trending from "./modules/Trending";
 import Compare from "./modules/CompareCars";
 import Brands from "./modules/Brands";
+import About from "./modules/About";
 
 //data(JSON) example
 const data = { category: ["car", "bike", 3, 4, 5] };
@@ -24,6 +25,7 @@ function App() {
         <Trending></Trending>
         <Compare></Compare>
         <Brands></Brands>
+        <About></About>
       </main>
     </div>
   );

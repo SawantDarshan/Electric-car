@@ -5,7 +5,7 @@ import "./CompareCars.css";
 function CompareCars() {
   return (
     <div className="CompareCars" id="compare">
-      <h4>Compare cars <i class="bi bi-calculator text-primary"></i></h4>
+      <h4>Compare cars <i className="bi bi-calculator text-primary"></i></h4>
       <div className="Compare">
         <div>
           <Card></Card>

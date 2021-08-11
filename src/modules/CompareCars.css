@@ -1,5 +1,10 @@
 .Compare{
     display: flex;
+    align-items: center;
+    place-content: center;
+}
+.Compare>div{
+    margin: 1em;
 }
 .CompareCars{
     padding: 1em;

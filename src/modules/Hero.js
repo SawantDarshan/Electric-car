@@ -1,10 +1,16 @@
 import React from "react";
 import "./Hero.css";
 // import heroImage from "../images/HeroCar.jpg";
+import City from "../images/HeroCarsCity.svg";
 
 function Hero() {
   return (
     <div className="Hero">
+
+      <div className="Hero-background">
+        <img src={City} alt="city" />
+      </div>
+
       <h1>Buying New Car?</h1>
       <h1>Check now!</h1>
       <form action="post">
