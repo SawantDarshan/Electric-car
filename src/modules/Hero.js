@@ -5,10 +5,11 @@ import City from "../images/HeroCarsCity.svg";
 
 function Hero() {
   return (
+    
     <div className="Hero">
-
       <div className="Hero-background">
-        <img src={City} alt="city" />
+
+        <img src={City} alt="city" max-width="100%" height="auto" />
       </div>
 
       <h1>Buying New Car?</h1>
@@ -29,7 +30,10 @@ function Hero() {
         </div>
       </form>
       <div className="Hero-filter"></div>
+      
     </div>
+
+    
   );
 }
 

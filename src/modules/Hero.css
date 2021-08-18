@@ -1,9 +1,11 @@
-/* body{
-    background-image: url(../images/HeroCar.jpg);
+ /* 540 720 hero image problem */
+ body{
+    /* background-image: url(../images/HeroCar.jpg);
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
-} */
+    background-repeat: no-repeat; */
+} 
+
 .Hero{
     /* filter: hue-rotate(200deg); */
     min-height: 250px;
@@ -12,20 +14,24 @@
     position: relative;
     overflow: hidden;
 }
+
 .Hero-background{
     position: absolute;
     height: 100%;
     top: 0px;
     right: 0px;
-    transform: rotateY(180deg);
-    z-index: -10;
+    /* transform: rotateY(180deg); */
+    z-index: 1;
 }
+
 .Hero-background img{
     height: 100%;
 }
+
 .Hero h1{
     color: black;
 }
+
 .Hero-form{
     width: fit-content;
     border-radius: 5px;
@@ -34,6 +40,7 @@
     position: relative;
     background-color: white;
     box-shadow: 0px 0px 5px 0px black;
+    z-index: 2;
 }
 
 .Hero-options{
@@ -74,15 +81,19 @@
     top: -100px;
     left: -100px;
     border-radius: 500px;
-    background-color: hsla(216, 98%, 52%, 0.466);
-    z-index: -10;
-    filter: hue-rotate(180deg);
+    background-color: hsl(69, 89%, 76%);
     transition-duration: 3s;
+    box-shadow: 0px 0px 0px 100vw hsla(216, 98%, 52%, 0.856);
+    z-index: -1;
 }
 
-@media only screen and (max-width: 600px) {
-   .Hero-filter{
-    background-color: hsla(216, 98%, 52%, 0.856);
+
+@media only screen and (max-width: 850px) {
+   
+   .Hero-background{
+       z-index: -1;
+       display: none !important;
+       
    }
-    
+
   }

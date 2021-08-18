@@ -1,3 +1,4 @@
+/* burger menu on modal */
 .Trending{
     background-color: var(--main-lighter);
     padding: 1em;
@@ -13,8 +14,24 @@
     background-color: white;
     overflow: hidden;
 }
-.Modal-options{
+@media only screen and (max-width: 768px) {
+    .Modal{
+    flex-direction: column;
+    }
+    .Modal-options ul li{
+        text-align: center;
+    }
+    .Modal ul{
+        display: flex;
+        /* position: absolute; */
+    }
+    .Modal li{
+        padding: 0px;
+        margin: 0px;
+        font-size: 0.5rem;
+    }
 }
+
 .Modal-options ul{
     list-style: none;
     padding: 0px;
@@ -42,15 +59,15 @@
     width: 150px;
 }
 .Modal-image{
-    padding: 1em;
-    background-color: gray;
+    background-color: black;
     min-width: 50%;
 }
 .Modal-image img{
-    width: 500px;
+    width: 100%;
 }
 .Modal-info{
     color: gray;
+    font-size: medium;
 }
 .card-deck{
 

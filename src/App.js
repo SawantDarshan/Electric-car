@@ -5,24 +5,19 @@ import Trending from "./modules/Trending";
 import Compare from "./modules/CompareCars";
 import Brands from "./modules/Brands";
 import About from "./modules/About";
+import data from "./Data";
+import { useState } from "react";
 
 //data(JSON) example
-const data = { category: ["car", "bike", 3, 4, 5] };
-const cars = [
-  { name: "foo", specs: ["bar", "bazz"] },
-  { name: "foo", specs: ["bar", "bazz"] },
-];
-
-//car names list
-const carList = cars.map((car) => car.name);
-
 function App() {
+  const [cars, setCars] = useState(data[0]);
+  console.log(cars);
   return (
     <div className="App">
-      <Nav category={data.category} carList={carList}></Nav>
+      <Nav></Nav>
       <main>
         <Hero></Hero>
-        <Trending></Trending>
+        <Trending key={cars.name}{...cars}></Trending>
         <Compare></Compare>
         <Brands></Brands>
         <About></About>

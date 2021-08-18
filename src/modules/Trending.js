@@ -2,7 +2,17 @@ import React from "react";
 import "./Trending.css";
 import Card from "./Card";
 
-function Trending({ name, price, info, performance, reviews, image }) {
+function Trending({
+  name,
+  brand,
+  mpn,
+  reviews,
+  color,
+  images,
+  offers,
+  mainImage,
+  description,
+}) {
   const modalOptionsHandler = (e) => {
     const list = e.target.parentElement.childNodes;
     list.forEach((element) => {
@@ -16,25 +26,29 @@ function Trending({ name, price, info, performance, reviews, image }) {
       <article className="Modal">
         <div className="Modal-options">
           <ul>
-            <li onClick={modalOptionsHandler}>name</li>
-            <li onClick={modalOptionsHandler}>price</li>
-            <li onClick={modalOptionsHandler}>info</li>
-            <li onClick={modalOptionsHandler}>performance</li>
-            <li onClick={modalOptionsHandler}>reviews</li>
+            <li onClick={modalOptionsHandler} className="select-color">
+              {name}
+            </li>
+            <li onClick={modalOptionsHandler}>{brand}</li>
+            <li onClick={modalOptionsHandler}>{description}</li>
+            <li onClick={modalOptionsHandler}>{`${mpn} ${color}`}</li>
+            <li onClick={modalOptionsHandler}>{`${offers[0].price}$`}</li>
           </ul>
         </div>
         <div className="Modal-render">
-          <h4>lorem ipsum</h4>
+          <h4>{name}</h4>
           <p className="Modal-info">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga
-            officia, non animi tenetur hic odit molestiae saepe? Quisquam ipsam
-            in hic fugit illo blanditiis expedita nostrum, iusto nesciunt sint
-            repudiandae!
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum
+            laboriosam atque dolorum in modi nostrum voluptas, autem reiciendis
+            vitae ut quisquam at quae! Beatae sed repudiandae voluptas quasi
+            magni. Tempore iusto pariatur veritatis assumenda rem ducimus ullam
+            eveniet velit nesciunt nostrum. Eligendi eius enim alias dicta
+            doloribus fuga aspernatur iste!
           </p>
           <button className="btn btn-primary Modal-btn">Book Now</button>
         </div>
         <div className="Modal-image">
-          <img src="" alt="" />
+          <img src={mainImage} alt={name} />
         </div>
       </article>
       <br />

@@ -1,12 +1,9 @@
 import React from "react";
 import "./Nav.css";
 
-// navbar componenet 
+// navbar componenet
 
-
-function Nav({ category, carList }) {
-
-
+function Nav() {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark">
       <div className="container-fluid">
@@ -33,13 +30,21 @@ function Nav({ category, carList }) {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#trending">
+              <a
+                className="nav-link active"
+                aria-current="page"
+                href="#trending"
+              >
                 <i className="bi bi-arrow-up-right nav-icons"></i>
                 Trending
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#compare">
+              <a
+                className="nav-link active"
+                aria-current="page"
+                href="#compare"
+              >
                 <i className="bi bi-images nav-icons"></i>
                 Compare
               </a>
@@ -57,6 +62,8 @@ function Nav({ category, carList }) {
               </a>
             </li>
             <li className="nav-item dropdown">
+
+            
               <a
                 className="nav-link active dropdown-toggle"
                 href="#home"
@@ -64,20 +71,44 @@ function Nav({ category, carList }) {
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
-              >
+              > 
+             
                 <i className="bi bi-card-list nav-icons"></i>
                 Category
               </a>
               <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                {category.map((item) => (
-                  <li>
-                    <a className="dropdown-item" href="#carlist">
-                      {item}
-                    </a>
-                  </li>
-                ))}
+                <li>
+                  <a className="dropdown-item" href="#carlist">
+                    item
+                  </a>
+                </li>
+                <li>
+                  <a className="dropdown-item" href="#carlist">
+                    item
+                  </a>
+                </li>
+                <li>
+                  <a className="dropdown-item" href="#carlist">
+                    item
+                  </a>
+                </li>
+                <li>
+                  <a className="dropdown-item" href="#carlist">
+                    item
+                  </a>
+                </li>
+                <li>
+                  <a className="dropdown-item" href="#carlist">
+                    item
+                  </a>
+                </li>
+                <li>
+                  <a className="dropdown-item" href="#carlist">
+                    item
+                  </a>
+                </li>
               </ul>
-            </li>
+            
             {/* <li className="nav-item">
               <a
                 className="nav-link disabled"
@@ -88,8 +119,8 @@ function Nav({ category, carList }) {
                 <span></span>
                 <span className="car-counter">{carList.length}</span>
               </a>
-            </li> */}
-          </ul>
+            </li> }
+          </ul>*/
           <form className="d-flex">
             <input
               className="form-control me-2"
